@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Wayou">
+    <meta name="description" content="hichat | a simple chat application built with node.js and websocket">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hichat</title>
+    <link rel="stylesheet" href="styles/framework/bootstrap-3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="scripts/jquery-3.2.1.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="content1">
+            <div class="content1-1">
+                <h1>王豆豆的聊天室</h1>
+            </div>
+            <div class="content1-2">
+                <h4>在线人数</h4>
+                <span id="status"></span>
+                <div class="content1-2-2">
+                    <h4>在线列表</h4>
+                    <div id="name"></div>
+                </div>
+            </div>
+            <div class="content1-3" style="text-align: center;">
+                <div style="margin-top: 7px;"> <a style="color:#656666;" href="">about</a><a href="" style="margin-left:30px;color:#656666;">help</a></div>
+                <div style="margin-top: 7px; color:#656666"> Wdd@2017 聊天室</div>
+            </div>
+        </div>
+        <div class="content2">
+            <div class="content2-1">
+                
+
+            </div>
+            <div class="content2-2">
+                <div class="content2-2-1">Chatting Room</div>
+                <div></div>
+            </div>
+            <div class="content2-3">
+                <div class="content2-3-1">
+                    <div class="content2-3-1-1">
+                        <div id="historyMsg">
+                        </div>
+                    </div>
+                    <div class="content2-3-1-2">
+                        <div class="controls">
+                            <div class="items">
+                                <input id="colorStyle" type="color" placeHolder='#000' title="font color" />
+                                <button id="emoji" type="button" title="emoji"><i class="fa fa-smile-o fa-lg"></i></button>
+                                <label for="sendImage" class="imageLable">
+                                    <button id="image"><i class="fa fa-image fa-lg"></i></button>
+                                    <input id="sendImage" type="file" value="image" />
+                                </label>
+                                <button id="clearBtn" title="clear screen"><i class="fa fa-trash fa-lg"></i></button>
+                            </div>
+                            <input style=" margin-left: 15px ;margin-top:2% ; float: left;width: 86%" id="messageInput" class="form-control input-sm" placeHolder="请输入内容"></input>
+                            <input style="float: left;margin-top:2%;margin-left:1.3%;
+                            " id="sendBtn" class="btn btn-primary btn-sm " type="button" value="发送">
+                            <div id="emojiWrapper">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content2-3-2" id="inFo"> </div>
+            </div>
+            <!--<div class="controls">
+                <div class="items">
+                    <input id="colorStyle" type="color" placeHolder='#000' title="font color" />
+                    <input id="emoji" type="button" value="emoji" title="emoji" />
+                    <label for="sendImage" class="imageLable">
+                        <input type="button" value="image" />
+                        <input id="sendImage" type="file" value="image" />
+                    </label>
+                    <input id="clearBtn" type="button" value="clear" title="clear screen" />
+                </div>
+                <textarea id="messageInput" placeHolder="enter to send"></textarea>
+                <input id="sendBtn" type="button" value="SEND">
+                <div id="emojiWrapper">
+                </div>
+            </div>
+            -->
+        </div>
+    </div>
+    <div id="loginWrapper">
+        <p id="info" style="font-size: 20PX;">正在连接至服务器...</p>
+        <div id="nickWrapper">
+            <input style="width: 30%;margin-left: 35%" type="text" class="form-control" placeHolder="用户昵称" id="nicknameInput" />
+            <input type="button" style="margin-top: 10px;" class="btn btn-primary btn-lg" value="登录" id="loginBtn" />
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts/hichat.js"></script>
+</body>
+
+</html>

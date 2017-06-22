@@ -1,0 +1,301 @@
+html,
+body {
+    margin: 0;
+    background-image: url(../img/beijing.jpg);
+    background-size: 100%;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: 80%;
+    height: 92%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+}
+
+.wrapper > div {
+   float: left;
+}
+
+.content1 {
+    height: 100%;
+    width: 20%;
+    background-color: #25292E;
+}
+
+.content1-1 {
+    height: 8%;
+    background-color: #22252A;
+}
+
+h1 {
+    color: #F7F7F7;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.content1-2 {
+    width: 100%;
+    height: 75%;
+    padding: 30px;
+   border-bottom:2px solid #373737;
+}
+
+.content1-2 h4{
+    color: #9F9FA0;
+}
+
+.content1-2 h2 {
+    color: #9F9FA0;
+}
+
+.content1-2 span {
+    color: #9F9FA0;
+}
+
+
+.content1-2-2{
+    margin-top: 40px;
+}
+
+.content2{
+    width: 80%;
+   height: 100%
+}
+
+
+.content2-1{
+    width: 100%;
+    background-color: #fff;
+    height: 10%;
+    border-bottom: 2px solid #DEDEDE;
+    text-align: right;
+    padding: 15px;
+    padding-right: 30px;
+}
+
+.content2-2{
+    width: 100%;
+    background-color: #F1F1F1;
+    height: 8%;
+    border-bottom: 2px solid #DEDEDE;
+}
+.content2-2-1{
+    width: 70%;
+     height: 100%;
+    background-color: #F1F1F1;
+    border-right: 2px solid #DEDEDE;
+    color:#494949;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.content2-3{
+    width: 100%;
+    background-color: #F7F7F7;
+    height: 82%;
+ 
+}
+
+.content2-3 > div{
+    float: left;
+}
+ 
+.content2-3-1{
+width: 70%;
+height: 100%;
+border-right: 2px solid #DEDEDE;
+
+}
+.content2-3-2{
+width: 30%;
+height: 100%;
+background-color: #F1EFEF;
+overflow: auto;
+}
+
+.content2-3-2 p{
+margin: 0;
+}
+.content2-3-1-1{
+    width: 100%;
+    height: 80%;
+}
+
+.content2-3-1-2{
+    width: 100%;
+    height: 20%;
+    background-color: #F1F1F1;
+    border-top: 2px solid #DEDEDE;
+}
+
+.userName span{
+    font-size: 20px;
+
+}
+.userName i{
+    font-size: 40px;
+    margin-right:10px; 
+
+}
+#name p{
+color:#9F9FA0;
+}
+
+.controls input{
+    border-radius: 3px;
+}
+ 
+
+#loginWrapper input{
+    border-radius: 3px;
+}
+#loginWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, .6);
+    text-align: center;
+    color: #fff;
+    display: block;
+    padding-top: 200px;
+}
+
+#nickWrapper {
+    display: none;
+}
+
+.banner {
+    height: 80px;
+    width: 100%;
+}
+
+.banner p {
+    float: left;
+    display: inline;
+}
+
+.controls {
+    height: 100px;
+    margin: 5px 0px;
+    position: relative;
+}
+
+#historyMsg {
+    height: 100%;
+    background-color: #F7F7F7;
+    overflow: auto;
+}
+
+#historyMsg img {
+    max-width: 99%;
+}
+
+.myMessage{
+    
+    text-align: right;
+ background-color: #ACD9F8  ;
+ border-radius: 5px;
+ border-width: 2px;
+ width: 80%;
+ height: 40px;
+ padding: 10px;
+margin-right: 10px;
+}
+
+.yourMessage{
+
+    text-align: left;
+ background-color: #fff;
+ border-radius: 5px;
+ border-width: 2px;
+ width: 80%;
+ height: 40px;
+ padding: 10px;
+margin-left: 10px;
+}
+
+.timespan {
+    color: #BFBFBF;
+    font-size: 12px;
+}
+
+.items {
+    margin-top:17px;
+     padding-left: 15px;
+     height: 20px;
+}
+
+#colorStyle {
+   display: none;   
+    width: 15px;
+    height: 15px;
+    border: 1px;
+    border-radius: 10px;
+    padding: 0;
+}
+
+button{
+    color:#C9C9C9;
+    background: transparent;
+ border: 0;
+}
+
+/*custom the file input*/
+
+.imageLable {
+    position: relative;
+}
+
+#sendImage {
+    position: absolute;
+    width: 52px;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.inFoMsg{
+width: 100%;
+height: 40px;
+border-bottom: 2px solid #DEDEDE;
+font-size: 15px;
+padding:7px;
+text-align: center; 
+}
+
+#emojiWrapper {
+    display: none;
+    width: 500px;
+    bottom: 105px;
+    position: absolute;
+    background-color: #aaa;
+    box-shadow: 0 0 10px #555;
+}
+
+#emojiWrapper img {
+    margin: 2px;
+    padding: 2px;
+    width: 25px;
+    height: 25px;
+}
+
+
+#emojiWrapper img:hover {
+    background-color: blue;
+}
+
+.emoji {
+    display: inline;
+}
+
+footer {
+    text-align: center;
+}
